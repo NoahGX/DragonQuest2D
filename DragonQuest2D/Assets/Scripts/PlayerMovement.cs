@@ -24,18 +24,18 @@ public class PlayerMovement : MonoBehaviour
         else if (horizontalInput < -0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && grounded)
             Jump();
 
         //Set animator parameters
         anim.SetBool("Run", horizontalInput != 0);
-        anim.SetBool("grounded", grounded);
+        anim.SetBool("Grounded", grounded);
     }
 
     private void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, speed);
-        anim.SetTrigger("jump");
+        anim.SetTrigger("Jump");
         grounded = false;
     }
 

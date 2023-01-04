@@ -28,14 +28,14 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
         //Set animator parameters
-        anim.SetBool("Run", horizontalInput != 0);
-        anim.SetBool("Grounded", grounded);
+        anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("grounded", grounded);
     }
 
     private void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, speed);
-        anim.SetTrigger("Jump");
+        anim.SetTrigger("jump");
         grounded = false;
     }
 

@@ -29,6 +29,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Set animator parameters
-        anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("Run", horizontalInput != 0);
     }
 }

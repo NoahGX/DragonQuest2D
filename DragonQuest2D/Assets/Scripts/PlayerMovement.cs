@@ -1,14 +1,18 @@
+using System;
+using System.Numerics;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float jumpPower;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
+    private float horizontalInput;
 
     private void Awake()
     {
@@ -19,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = Input.GetAxis("Horizontal");
 
         //flip player when moving left or right
         if (horizontalInput > 0.01f)
@@ -31,25 +35,51 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded());
 
-        if (wallJumpCooldown < 0.2f)
+        //Wall jump logic
+        if (wallJumpCooldown > 0.2f)
         {
-            if (Input.GetKey(KeyCode.Space) && isGrounded())
-                Jump();
 
             body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+
+            if (onWall() && !isGrounded())
+            {
+                body.gravityScale = 0;
+                body.velocity = Vector2.zero;
+            }
+            else
+                body.gravityScale = 2;
+
+            if (Input.GetKey(KeyCode.Space))
+                Jump();
         }
 
-        if (onWall() && !isGrounded())
+        else
         {
-            body.gravityScale = 0;
-            body.velocity = Vector2.zero;
+            wallJumpCooldown += Time.deltaTime;
         }
     }
 
     private void Jump()
     {
-        body.velocity = new Vector2(body.velocity.x, speed);
-        anim.SetTrigger("jump");
+        if (isGrounded())
+        {
+            body.velocity = new Vector2(body.velocity.x, jumpPower);
+            anim.SetTrigger("jump");
+        }
+        else if (onWall() && !isGrounded())
+        {
+            if (horizontalInput == 0)
+            {
+                body.velocity = new Vector(-Mathf.Sign(transfom.localScale.x) * 10, 0);
+                transform.localScale = new Vector3(-MathF.Sign(transform.localScale.x),
+                    transform.localScale.y, transform.localScale.z);
+            }
+            else
+            {
+                body.velocity = new Vector2(-Mathf.Sign(transfom.localScale.x) * 3, 5);
+            }
+            wallJumpCooldown = 0;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

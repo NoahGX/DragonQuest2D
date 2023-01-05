@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 527178401}
   - component: {fileID: 527178400}
   - component: {fileID: 527178402}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -372,6 +372,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!60 &2111728244
 PolygonCollider2D:
   m_ObjectHideFlags: 0

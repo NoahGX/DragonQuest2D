@@ -33,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
         //Set animator parameters
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded());
+
+        print(onWall());
     }
 
     private void Jump()

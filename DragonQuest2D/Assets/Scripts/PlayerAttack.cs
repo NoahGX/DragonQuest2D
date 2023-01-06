@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -8,7 +9,7 @@ public class PlayerAttack : MonoBehaviour
 
     private Animator anim;
     private PlayerMovement playerMovement;
-    private float coolDownTimer = Mathf.Infinity;
+    private float cooldownTimer = Mathf.Infinity;
 
     private void Awake()
     {
@@ -16,24 +17,22 @@ public class PlayerAttack : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
     }
 
-    //Update is called once per frame
     private void Update()
     {
-        if (Input.GetMouseButton(0) && coolDownTimer > attackCooldown && playerMovement.canAttack())
+        if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && playerMovement.canAttack())
             Attack();
 
-        coolDownTimer += Time.deltaTime;
+        cooldownTimer += Time.deltaTime;
     }
-    
+
     private void Attack()
     {
         anim.SetTrigger("attack");
-        coolDownTimer = 0;
+        cooldownTimer = 0;
 
         fireballs[FindFireball()].transform.position = firePoint.position;
         fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
-
     private int FindFireball()
     {
         for (int i = 0; i < fireballs.Length; i++)

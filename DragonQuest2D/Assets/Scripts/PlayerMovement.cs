@@ -1,5 +1,3 @@
-using System;
-using System.Numerics;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -16,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        //Grab references for rigidboy and animator from object
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
@@ -25,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
 
-        //flip player when moving left or right
+        //flip player when moving left-right
         if (horizontalInput > 0.01f)
             transform.localScale = Vector3.one;
         else if (horizontalInput < -0.01f)
@@ -47,16 +46,14 @@ public class PlayerMovement : MonoBehaviour
                 body.velocity = Vector2.zero;
             }
             else
-                body.gravityScale = 2;
+                body.gravityScale = 7;
 
             if (Input.GetKey(KeyCode.Space))
                 Jump();
         }
 
         else
-        {
             wallJumpCooldown += Time.deltaTime;
-        }
     }
 
     private void Jump()
@@ -70,14 +67,13 @@ public class PlayerMovement : MonoBehaviour
         {
             if (horizontalInput == 0)
             {
-                body.velocity = new Vector(-Mathf.Sign(transfom.localScale.x) * 10, 0);
-                transform.localScale = new Vector3(-MathF.Sign(transform.localScale.x),
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 10, 0);
+                transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x),
                     transform.localScale.y, transform.localScale.z);
             }
             else
-            {
-                body.velocity = new Vector2(-Mathf.Sign(transfom.localScale.x) * 3, 5);
-            }
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 3, 5);
+
             wallJumpCooldown = 0;
         }
     }

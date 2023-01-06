@@ -15,6 +15,7 @@ public class Projectile : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
+
     private void Update()
     {
         if (hit) return;
@@ -24,12 +25,14 @@ public class Projectile : MonoBehaviour
         lifetime += Time.deltaTime;
         if (lifetime > 5) gameObject.SetActive(false);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         hit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
     }
+
     public void SetDirection(float _direction)
     {
         lifetime = 0;
@@ -44,6 +47,7 @@ public class Projectile : MonoBehaviour
 
         transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
     }
+
     private void Deactivate()
     {
         gameObject.SetActive(false);

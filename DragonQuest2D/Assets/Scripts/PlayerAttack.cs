@@ -24,13 +24,13 @@ public class PlayerAttack : MonoBehaviour
 
         coolDownTimer += Time.deltaTime;
     }
-
+    
     private void Attack()
     {
         anim.SetTrigger("attack");
         coolDownTimer = 0;
 
-        fireballs[FineFireball()].transform.position = firePoint.position;
+        fireballs[FindFireball()].transform.position = firePoint.position;
         fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
 
@@ -41,7 +41,6 @@ public class PlayerAttack : MonoBehaviour
             if (!fireballs[i].activeInHierarchy)
                 return i;
         }
-
         return 0;
     }
 }

@@ -3,6 +3,9 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private float attackCooldown;
+    [SerializeField] private Transform firePoint;
+    [SerializeField] private GameObject[] fireballs;
+
     private Animator anim;
     private PlayerMovement playerMovement;
     private float coolDownTimer = Mathf.Infinity;
@@ -13,7 +16,7 @@ public class PlayerAttack : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
     }
 
-    // Update is called once per frame
+    //Update is called once per frame
     private void Update()
     {
         if (Input.GetMouseButton(0) && coolDownTimer > attackCooldown && playerMovement.canAttack())
@@ -26,5 +29,8 @@ public class PlayerAttack : MonoBehaviour
     {
         anim.SetTrigger("attack");
         coolDownTimer = 0;
+
+        fireballs[0].transform.position = firePoint.position;
+        fireballs[0].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
 }

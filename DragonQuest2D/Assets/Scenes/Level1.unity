@@ -4871,7 +4871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1602495279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -5876,7 +5876,7 @@ GameObject:
   - component: {fileID: 2111728248}
   - component: {fileID: 2111728249}
   - component: {fileID: 2111728250}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -6292,6 +6292,10 @@ PrefabInstance:
     - target: {fileID: 8908087952275914770, guid: 8f18342475daa4b86b2520c835e07d72, type: 3}
       propertyPath: m_Name
       value: Saw
+      objectReference: {fileID: 0}
+    - target: {fileID: 8908087952275914770, guid: 8f18342475daa4b86b2520c835e07d72, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8908087952275914773, guid: 8f18342475daa4b86b2520c835e07d72, type: 3}
       propertyPath: m_RootOrder

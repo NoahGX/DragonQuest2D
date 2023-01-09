@@ -415,6 +415,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball (4)
@@ -482,6 +490,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball (2)
@@ -549,6 +565,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball (7)
@@ -700,6 +724,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball (9)
@@ -1255,6 +1287,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball (6)
@@ -2780,6 +2820,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball (8)
@@ -3015,6 +3063,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball (5)
@@ -3205,7 +3261,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21, y: 2.4}
+  m_Size: {x: 21, y: 2.35}
   m_EdgeRadius: 0
 --- !u!1 &1125989995
 GameObject:
@@ -3374,6 +3430,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball (1)
@@ -4124,7 +4188,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21, y: 2.4}
+  m_Size: {x: 21, y: 2.35}
   m_EdgeRadius: 0
 --- !u!1 &1479075521
 GameObject:
@@ -4836,6 +4900,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball (3)
@@ -5953,7 +6025,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17000002, y: -0.5}
+  m_Offset: {x: -0.17000002, y: -0.53}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5964,7 +6036,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1.5}
+  m_Size: {x: 1.45, y: 1.4}
   m_EdgeRadius: 0
 --- !u!114 &2111728249
 MonoBehaviour:
@@ -5978,7 +6050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9616699243f348a291e104539f7fade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 0.5
+  attackCooldown: 0.25
   firePoint: {fileID: 1602495279}
   fireballs:
   - {fileID: 1572803217}
@@ -6095,6 +6167,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16411098}
     m_Modifications:
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172733167641248315, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1034752183
+      objectReference: {fileID: 0}
     - target: {fileID: 3172733167641248316, guid: c7aa4b8f8522b43468848026560de11e, type: 3}
       propertyPath: m_Name
       value: Fireball

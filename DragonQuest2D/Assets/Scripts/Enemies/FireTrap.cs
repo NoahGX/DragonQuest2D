@@ -35,13 +35,20 @@ public class FireTrap : MonoBehaviour
 
     private IEnumerator ActivateFiretrap()
     {
+        //turn the sprite red to notify the player and trigger the trap
         triggered = true;
         spriteRend.color = Color.red;
+
+        //wait for delay, activate trap, turn on animation, reutrn color back to normal
         yield return new WaitForSeconds(activationDelay);
         spriteRend.color = Color.white;
         active = true;
+        anim.SetBool("activated", true);
+
+        //wait for x seconds, deactivate trap, reset all variables and animator
         yield return new WaitForSeconds(activeTime);
         active = false;
         triggered = false;
+        anim.SetBool("activated", false);
     }
 }

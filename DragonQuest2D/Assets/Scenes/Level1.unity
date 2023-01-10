@@ -5872,6 +5872,7 @@ GameObject:
   - component: {fileID: 2087414729}
   - component: {fileID: 2087414728}
   - component: {fileID: 2087414727}
+  - component: {fileID: 2087414731}
   m_Layer: 0
   m_Name: Spikehead
   m_TagString: Untagged
@@ -5993,6 +5994,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2087414731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087414726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f387543f09b42049788fb9d2c16d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  speed: 1
+  range: 15
+  checkDelay: 3
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &2111728241
 GameObject:
   m_ObjectHideFlags: 0

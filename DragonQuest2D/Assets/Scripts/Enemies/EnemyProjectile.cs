@@ -1,18 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyProjectile : MonoBehaviour
+public class EnemyProjectile : EnemyDamage //will damage player on contact every time
 {
-    // Start is called before the first frame update
-    void Start()
+    public void SetDirection(float _direction)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+         
     }
 }

@@ -1,19 +1,32 @@
 using UnityEngine;
 
-public class EnemyProjectile : EnemyDamage //will damage player on contact every time
+public class EnemyProjectile : EnemyDamage
 {
     [SerializeField] private float speed;
     [SerializeField] private float resetTime;
     private float lifetime;
+    private Animator anim;
+    private BoxCollider2D coll;
+
+    private bool hit;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+        coll = GetComponent<BoxCollider2D>();
+    }
 
     public void ActivateProjectile()
     {
+        hit = false;
         lifetime = 0;
         gameObject.SetActive(true);
+        coll.enabled = true;
     }
 
     private void Update()
     {
+        if (hit) return;
         float movementSpeed = speed * Time.deltaTime;
         transform.Translate(movementSpeed, 0, 0);
 
@@ -24,7 +37,18 @@ public class EnemyProjectile : EnemyDamage //will damage player on contact every
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        base.OnTriggerEnter2D(collision); //exectute logic from parent script first
-        gameObject.SetActive(false); //when arrow hits any object, deactivate it
+        hit = true;
+        base.OnTriggerEnter2D(collision); //Execute logic from parent script first
+        coll.enabled = false;
+
+        if (anim != null)
+            anim.SetTrigger("explode"); //When the object is a fireball explode it
+        else
+            gameObject.SetActive(false); //When this hits any object deactivate arrow
+    }
+
+    private void Deactivate()
+    {
+        gameObject.SetActive(false);
     }
 }

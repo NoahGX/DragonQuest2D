@@ -2650,6 +2650,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3552562981499409762, guid: 12858a865fa5e4ce38fb7a0c6fbe395e, type: 3}
   m_PrefabInstance: {fileID: 3552562981820134138}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &938403737 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3552562981499409763, guid: 12858a865fa5e4ce38fb7a0c6fbe395e, type: 3}
+  m_PrefabInstance: {fileID: 3552562981820134138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &982616373
 GameObject:
   m_ObjectHideFlags: 0
@@ -4054,6 +4059,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2b96865142d43c2b2697206f6b04c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftEdge: {fileID: 1471855705}
+  rightEdge: {fileID: 1657407426}
+  enemy: {fileID: 938403736}
+  speed: 3
+  idleDuration: 1
+  anim: {fileID: 938403737}
 --- !u!1 &1409984787
 GameObject:
   m_ObjectHideFlags: 0

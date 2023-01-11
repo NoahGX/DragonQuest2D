@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Firetrap : MonoBehaviour
+public class FireTrap : MonoBehaviour
 {
     [SerializeField] private float damage;
 

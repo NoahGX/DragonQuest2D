@@ -172,7 +172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3552562981499409766, guid: 12858a865fa5e4ce38fb7a0c6fbe395e, type: 3}
       propertyPath: range
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3552562981499409766, guid: 12858a865fa5e4ce38fb7a0c6fbe395e, type: 3}
       propertyPath: attackCooldown

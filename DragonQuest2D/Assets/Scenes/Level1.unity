@@ -6628,7 +6628,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7808223063419970100, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: range
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063419970100, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: colliderDistance
@@ -6644,7 +6644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063897508553, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063897508554, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: m_RootOrder

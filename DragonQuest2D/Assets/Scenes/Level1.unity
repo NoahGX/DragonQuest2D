@@ -6479,7 +6479,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7808223063419970100, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: range
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063419970100, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: colliderDistance
@@ -6487,7 +6487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063419970110, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063897508553, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: m_Name
@@ -6642,12 +6642,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 1398378338}
     m_Modifications:
     - target: {fileID: 1117274004060264513, guid: 238b90d5fcc04441ba44426ca6bf9e63, type: 3}
+      propertyPath: components.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117274004060264513, guid: 238b90d5fcc04441ba44426ca6bf9e63, type: 3}
       propertyPath: components.Array.data[1]
       value: 
       objectReference: {fileID: 1398378339}
+    - target: {fileID: 1117274004060264515, guid: 238b90d5fcc04441ba44426ca6bf9e63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059767964971486277, guid: 238b90d5fcc04441ba44426ca6bf9e63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9059767965653808876, guid: 238b90d5fcc04441ba44426ca6bf9e63, type: 3}
       propertyPath: m_Name
       value: RangedEnemyHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059767965653808876, guid: 238b90d5fcc04441ba44426ca6bf9e63, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9059767965653808877, guid: 238b90d5fcc04441ba44426ca6bf9e63, type: 3}
       propertyPath: m_RootOrder

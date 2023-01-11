@@ -172,11 +172,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3552562981499409766, guid: 12858a865fa5e4ce38fb7a0c6fbe395e, type: 3}
       propertyPath: range
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3552562981499409766, guid: 12858a865fa5e4ce38fb7a0c6fbe395e, type: 3}
       propertyPath: attackCooldown
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3552562981499409766, guid: 12858a865fa5e4ce38fb7a0c6fbe395e, type: 3}
+      propertyPath: colliderDistance
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 3552562981499409772, guid: 12858a865fa5e4ce38fb7a0c6fbe395e, type: 3}
       propertyPath: m_Name

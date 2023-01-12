@@ -6234,7 +6234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1653619134549529920, guid: 187208bbb0df646a08f5c66ab75cef03, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1653619134549529921, guid: 187208bbb0df646a08f5c66ab75cef03, type: 3}
       propertyPath: m_RootOrder
@@ -6615,7 +6615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7417874699538373571, guid: a08c952cc2e5049a1b955a4acbfe0298, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7417874699538373574, guid: a08c952cc2e5049a1b955a4acbfe0298, type: 3}
       propertyPath: pickupSound

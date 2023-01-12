@@ -6292,10 +6292,6 @@ PrefabInstance:
       propertyPath: fireballs.Array.data[9]
       value: 
       objectReference: {fileID: 302596568}
-    - target: {fileID: 892715501243622665, guid: 5d796c7d02a524f30b37e70e3032781b, type: 3}
-      propertyPath: jumpSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 06d2d5be7ec98435bbce403bdd9b1956, type: 3}
     - target: {fileID: 892715501243622667, guid: 5d796c7d02a524f30b37e70e3032781b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6477,18 +6473,6 @@ PrefabInstance:
     - target: {fileID: 2386193068852512698, guid: d07f18767e0cb4561b5bc9cb7a46b997, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2386193068852512699, guid: d07f18767e0cb4561b5bc9cb7a46b997, type: 3}
-      propertyPath: range
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2386193068852512699, guid: d07f18767e0cb4561b5bc9cb7a46b997, type: 3}
-      propertyPath: speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2386193068852512699, guid: d07f18767e0cb4561b5bc9cb7a46b997, type: 3}
-      propertyPath: checkDelay
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07f18767e0cb4561b5bc9cb7a46b997, type: 3}
@@ -6734,10 +6718,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7417874699538373569, guid: a08c952cc2e5049a1b955a4acbfe0298, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7417874699538373571, guid: a08c952cc2e5049a1b955a4acbfe0298, type: 3}
       propertyPath: m_Name
       value: HealthCollectible
@@ -6746,10 +6726,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7417874699538373574, guid: a08c952cc2e5049a1b955a4acbfe0298, type: 3}
-      propertyPath: pickupSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 5fe4c96f79cb24b0cbf1e66f6b3ce1cf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a08c952cc2e5049a1b955a4acbfe0298, type: 3}
 --- !u!1001 &7808223063077946792
@@ -6777,7 +6753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063897508553, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063897508554, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: m_RootOrder
@@ -6909,10 +6885,6 @@ PrefabInstance:
     - target: {fileID: 8908087952275914773, guid: 8f18342475daa4b86b2520c835e07d72, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8908087952275914775, guid: 8f18342475daa4b86b2520c835e07d72, type: 3}
-      propertyPath: damage
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f18342475daa4b86b2520c835e07d72, type: 3}

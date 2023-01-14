@@ -11,7 +11,7 @@ public class PlayerRespawn : MonoBehaviour
         playerHealth = GetComponent<Health>();
     }
 
-    public void Respawn()
+    public void CheckRespawn()
     {
         playerHealth.Respawn(); //Restore player health and reset animation
         transform.position = currentCheckpoint.position; //Move player to checkpoint location

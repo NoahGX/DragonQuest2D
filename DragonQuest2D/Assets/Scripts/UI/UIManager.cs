@@ -11,7 +11,6 @@ public class UIManager : MonoBehaviour
         gameOverScreen.SetActive(false);
     }
 
-    #region Game Over Functions
     //Game over function
     public void GameOver()
     {
@@ -35,10 +34,5 @@ public class UIManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit(); //Quits the game (only works in build)
-
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; //Exits play mode
-#endif
     }
-    #endregion
 }

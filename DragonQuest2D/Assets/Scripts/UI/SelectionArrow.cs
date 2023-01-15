@@ -14,12 +14,6 @@ public class SelectionArrow : MonoBehaviour
         arrow = GetComponent<RectTransform>();
     }
 
-    private void OnEnable()
-    {
-        currentPosition = 0;
-        ChangePosition(0);
-    }
-
     private void Update()
     {
         //Change the position of the selection arrow
@@ -45,13 +39,7 @@ public class SelectionArrow : MonoBehaviour
         else if (currentPosition > buttons.Length - 1)
             currentPosition = 0;
 
-        AssignPosition();
-    }
-
-    private void AssignPosition()
-    {
-        //Assign the Y position of the current option to the arrow (basically moving it up and down)
-        arrow.position = new Vector3(arrow.position.x, buttons[currentPosition].position.y);
+        arrow.position = new Vector3(arrow.position.x, buttons[currentPosition].position.y, 0);
     }
 
     private void Interact()

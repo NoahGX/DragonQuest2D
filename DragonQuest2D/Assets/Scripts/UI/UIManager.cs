@@ -34,5 +34,6 @@ public class UIManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit(); //Quits the game (only works in build)
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }

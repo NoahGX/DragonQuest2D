@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
         gameOverScreen.SetActive(true);
         SoundManager.instance.PlaySound(gameOverSound);
     }
-
+    
     //Restart level
     public void Restart()
     {

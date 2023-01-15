@@ -15,10 +15,13 @@ public class PlayerRespawn : MonoBehaviour
 
     public void CheckRespawn()
     {
+        //Check if checkpoint is available
         if (currentCheckpoint == null)
         {
+            //Show GameOver screen
             uiManager.GameOver();
-            return;
+
+            return; //Don't execute the rest of this function
         }
 
         playerHealth.Respawn(); //Restore player health and reset animation

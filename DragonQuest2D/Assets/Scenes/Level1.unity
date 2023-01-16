@@ -950,8 +950,8 @@ GameObject:
   m_Component:
   - component: {fileID: 129367596}
   - component: {fileID: 129367599}
-  - component: {fileID: 129367598}
   - component: {fileID: 129367597}
+  - component: {fileID: 129367600}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -995,21 +995,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &129367598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129367595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deec08e91e2864808a0df598f65c3158, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousRoom: {fileID: 1970311469}
-  nextRoom: {fileID: 817728794}
-  cam: {fileID: 519420033}
 --- !u!61 &129367599
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1036,6 +1021,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.18}
   m_EdgeRadius: 0
+--- !u!114 &129367600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129367595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deec08e91e2864808a0df598f65c3158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previousRoom: {fileID: 263224277}
+  nextRoom: {fileID: 817728794}
+  cam: {fileID: 519420033}
 --- !u!1001 &129699305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1269,7 +1269,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6897467265331924155, guid: f25c10c53f66c444c9a709b9e1cda5b4, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6897467265331924155, guid: f25c10c53f66c444c9a709b9e1cda5b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1787,8 +1787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf417a7a02af146ffb02c2d6a83f88ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 2087414726}
+  enemies: []
 --- !u!4 &297071463 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7808223063897508554, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
@@ -2041,9 +2040,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deec08e91e2864808a0df598f65c3158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousRoom: {fileID: 263224277}
+  previousRoom: {fileID: 0}
   nextRoom: {fileID: 0}
-  cam: {fileID: 519420033}
+  cam: {fileID: 0}
 --- !u!1 &337677594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3189,8 +3188,8 @@ GameObject:
   m_Component:
   - component: {fileID: 511311787}
   - component: {fileID: 511311788}
-  - component: {fileID: 511311789}
   - component: {fileID: 511311790}
+  - component: {fileID: 511311791}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -3239,21 +3238,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.18}
   m_EdgeRadius: 0
---- !u!114 &511311789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511311786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deec08e91e2864808a0df598f65c3158, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousRoom: {fileID: 1970311469}
-  nextRoom: {fileID: 263224277}
-  cam: {fileID: 519420033}
 --- !u!50 &511311790
 Rigidbody2D:
   serializedVersion: 4
@@ -3275,6 +3259,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &511311791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511311786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deec08e91e2864808a0df598f65c3158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previousRoom: {fileID: 1970311469}
+  nextRoom: {fileID: 263224277}
+  cam: {fileID: 519420033}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4420,8 +4419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf417a7a02af146ffb02c2d6a83f88ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 2087414726}
+  enemies: []
 --- !u!1 &832518440
 GameObject:
   m_ObjectHideFlags: 0
@@ -7191,7 +7189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063897508554, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7808223063897508554, guid: ccf627b0976254e20be84611ba5c3021, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11982,7 +11980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2386193068852512694, guid: d07f18767e0cb4561b5bc9cb7a46b997, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2386193068852512694, guid: d07f18767e0cb4561b5bc9cb7a46b997, type: 3}
       propertyPath: m_TagString

@@ -6572,6 +6572,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &978378132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1970311469}
+    m_Modifications:
+    - target: {fileID: 4314089194665184986, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_Name
+      value: ArrowTrap2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+--- !u!4 &978378133 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
+  m_PrefabInstance: {fileID: 978378132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &982616373
 GameObject:
   m_ObjectHideFlags: 0
@@ -10400,7 +10466,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4314089194665184986, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
       propertyPath: m_Name
-      value: ArrowTrap
+      value: ArrowTrap1
       objectReference: {fileID: 0}
     - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
       propertyPath: m_RootOrder
@@ -10412,7 +10478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4314089194665184987, guid: 620411e3ebb9b4233bc086bbc439e624, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14199,6 +14265,7 @@ Transform:
   - {fileID: 1398378338}
   - {fileID: 1488801181}
   - {fileID: 1467513782}
+  - {fileID: 978378133}
   m_Father: {fileID: 1964164956}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
